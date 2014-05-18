@@ -1,7 +1,7 @@
 ShairPort
 =========
 By [James Laird](mailto:jhl@mafipulation.org) ([announcement](http://mafipulation.org/blagoblig/2011/04/08#shairport))
-
+This is copied by the repo of the person below. Remember, this repository is only to understant and learn how to use Github, Raspberry Pi and repos. THANK YOU!
 What it is
 ----------
 This program emulates an AirPort Express for the purpose of streaming music from iTunes and compatible iPods and iPhones. It implements a server for the Apple RAOP protocol.
