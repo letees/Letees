@@ -2,6 +2,8 @@ PiCAST 2.0 (stable)
 ===
 <h3>Turn a $35 Raspberry Pi in to a Chromecast like Device, for FREE.</h3>
 <hr>
+This is copied by the repo lanceseidman. Remember, this repository is only to understand and learn how to use Github, Raspberry Pi and repos. THANK YOU!
+
 
 PiCAST turns your $35 Raspberry Pi in to a Chromecast like Device.
 
