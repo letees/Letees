@@ -31,7 +31,7 @@ Install all the Packages needed using this code
 > sudo apt-get install avahi-utils build-essential chkconfig git libao-dev libavahi-client-dev libcrypt-openssl-rsa-perl libio-socket-inet6-perl libssl-dev libwww-perl pkg-config
 
 To download Shairport use 
-> git clone -b 1.0-dev git://github.com/letees/Letees/tree/master/Raspberry%20Pi/Shairport.git
+> git clone -b 1.0-dev git://github.com/abrasive/shairport.git
 
 Navigate to the folder we've just downloaded by using 
 > cd Shairport
