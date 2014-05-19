@@ -24,6 +24,27 @@ I'm going to be using the Raspbian operating system. Raspbian is a Linux distrib
 
 An AirPlay receiver does not necessarily need to be wireless and the Raspberry Pi I'll be configuring will make use of the Ethernet port and be connected via a cable to my home's network.
 
+Update software using 
+> sudo apt-get update && apt-get upgrade
+
+Install all the Packages needed using this code
+> sudo apt-get install avahi-utils build-essential chkconfig git libao-dev libavahi-client-dev libcrypt-openssl-rsa-perl libio-socket-inet6-perl libssl-dev libwww-perl pkg-config
+
+To download Shairport use 
+> git clone -b 1.0-dev git://github.com/letees/Letees/tree/master/Raspberry%20Pi/Shairport.git
+
+Navigate to the folder we've just downloaded by using 
+> cd Shairport
+
+Then, install and configure Shairport by using 
+> sudo ./configure && sudo make && sudo make install
+
+
+Now, everytime you want to use Shairport, open LXterminal and write this three codes
+> cd Shairport
+> sudo ./configure && sudo make && sudo make install
+> shairport -a "Raspberry Pi de Letees"
+
 
 
 Thanks
