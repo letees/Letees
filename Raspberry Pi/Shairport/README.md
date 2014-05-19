@@ -2,57 +2,28 @@ ShairPort
 =========
 By [James Laird](mailto:jhl@mafipulation.org) ([announcement](http://mafipulation.org/blagoblig/2011/04/08#shairport))
 This is copied by the repo of the person below. Remember, this repository is only to understant and learn how to use Github, Raspberry Pi and repos. THANK YOU!
+
 What it is
 ----------
 This program emulates an AirPort Express for the purpose of streaming music from iTunes and compatible iPods and iPhones. It implements a server for the Apple RAOP protocol.
 ShairPort does not support AirPlay v2 (video and photo streaming).
 
-Build Requirements
-------------------
-Required:
-* OpenSSL
+How to run it (Letees)
+---------- 
+Requirements
 
-Optionally:
-* libao
-* PulseAudio
-* avahi
+Raspberry Pi
+SD Card that's 4GB or larger
+Micro USB cable and power source (or Micro USB power adapter)
+HDMI cable and compatible display
+USB keyboard
+Some speakers
+Ethernet cable
 
-Debian/Raspbian users can get the basics with
-`apt-get install libssl-dev libavahi-client-dev libasound2-dev`
+I'm going to be using the Raspbian operating system. Raspbian is a Linux distribution that has been tweaked specifically for the Raspberry Pi. It's lightweight and easy to use, with all of the built-in hardware already configured with drivers and ready to go.
 
+An AirPlay receiver does not necessarily need to be wireless and the Raspberry Pi I'll be configuring will make use of the Ethernet port and be connected via a cable to my home's network.
 
-Runtime Requirements
---------------------
-You must be running an mDNS (Bonjour) daemon. On a Mac, this will be running already. Otherwise, you must be running avahi-daemon or Howl.
-As an alternative, you may use the tinysvcmdns backend, which embeds a lightweight mDNS daemon. It is, however, way less robust than bonjour or avahi.
-Check the [mDNS Backends] section for more information.
-
-How to get started
--------------
-```
-./configure
-make
-./shairport -a 'My Shairport Name'
-```
-
-The triangle-in-rectangle AirTunes (now AirPlay) logo will appear in the iTunes status bar of any machine on the network, or on iPod/iPhone play controls screen. Choose your access point name to start streaming to the ShairPort instance.
-
-Audio Outputs
--------------
-Shairport supports different audio backends.
-For a list of available backends and their options, run `shairport -h`.
-Note that options are supplied to backends at the end of the commandline, separated by --, for example:
-```
-shairport -o ao -- -d mydriver -o setting=thing
-```
-
-mDNS Backends
--------------
-Shairport uses mDNS to advertize the service. Multiple backends are available to perform the task.
-For a list of available backends, run `shairport -h`.
-The backends prefixed by 'external' rely on external programs that should be present in your path.
-By default, shairport will try all backends, in the order they are listed by `shairport -h`, until one works.
-You can force the use of a specific backend using `shairport -m tinysvcmdns` for example.
 
 
 Thanks
