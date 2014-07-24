@@ -3,27 +3,41 @@
 <style>
   @import url(http://fonts.googleapis.com/css?family=League+Script);
   
-<form id="loginform" action="http://AQUI TU SITIO.com/wp-login.php" method="post">
-<label>Nombre de usuario</label>
-<input id="user_login" class="input" name="log" size="20" type="text" value="Usuario" tabindex="20" />
-<label>Contraseña</label>
-<input id="user_pass" class="input" name="pwd" size="20" type="password" tabindex="20" />
-<p class="submit"><input id="wp-submit" name="wp-submit"  value="Acceder" type="submit" /></p>
-<p class="forgetmenot"><label>
-<input id="rememberme" name="rememberme" type="checkbox" value="forever" tabindex="90" /> Recuérdame</label></p>
+<form name="formu" action="login.php" method="post">
+<table bgcolor="#DADADA" border="0" cellpadding="1" cellspacing="1" align="center">
+	<tr>
+		<td bgcolor="#CCCCCC" align="center" colspan="2">
+			<b>LOGIN</b>
+		</td>
+	</tr>
+	<tr>
+		<td align="right">
+			<b>Usuario:</b>&nbsp;
+		</td>
+		<td align="left">
+		<input type="text" maxlength="10" name="usu_form">&nbsp;
+		</td>
+	</tr>
+	<tr>
+		<td align="right">
+			&nbsp;<b>Pasword:</b>&nbsp;
+		</td>
+		<td align="left">
+		<input type="password" maxlength="10" name="pass_form">&nbsp;
+		</td>
+	</tr>
+	<tr>
+		<td colspan="2" align="center">
+		<input type="submit" value="L O G I N">
+		</td>
+	</tr>
+	<tr>
+		<td align="center" colspan="2">
+			&nbsp;¿No estas registrado? <a href="registro.html"><font color="#000000"><b>REGISTRATE</b></font></a>&nbsp;
+		</td>
+	</tr>
 </form>
-
-<?php global $user_ID, $user_identity, $user_level ?>
-        <?php if ( $user_ID ) : ?>
-
-<a href="http://TU SITIO.com/wp-admin/">Escritorio</a>
-<a href="<?php echo wp_logout_url(); ?>" title="Logout">SALIR</a>
-
-<?php elseif ( get_option('users_can_register') ) : ?>
-
-AQUÍ EL FORMULARIO ANTERIOR
-       
- <?php endif // get_option('users_can_register') ?>
+</table> 
   
 body {
   font-family: font-family: 'Halo Handletter', normal;
