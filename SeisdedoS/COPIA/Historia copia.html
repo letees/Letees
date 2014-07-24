@@ -1,5 +1,21 @@
 <html>
 <head>
+
+<script type="text/javascript">
+    function changeText(link)
+        {
+            var display = document.getElementById('text-display');
+            display.innerHTML = "";
+            display.innerHTML = text;
+        }
+          function changeback(text)
+        {
+            var display = document.getElementById('text-display');
+            display.innerHTML = "";
+            display.innerHTML = text;
+        }
+
+
 <style>
 body {
 font-family: font-family: 'Halo Handletter', normal;
@@ -178,7 +194,7 @@ font-weight:500;
 <div class="image"></div>
 
   <div class="contentarea1">
-    <h1 style="font-family:'HaloHandletter';font-weight:normal;font-size:40px;"><a onmouseover="this.click('Inicio');" href="http://www.google.es">link</a>
+    <h1 style="font-family:'HaloHandletter';font-weight:normal;font-size:40px;"><onmouseover="changeText('Yes, this is Onmouseover Text')" onmouseout="changeback('any thing')" >
   </div>
   
   <div class="contentarea2">
