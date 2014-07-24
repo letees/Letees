@@ -1,0 +1,100 @@
+<html>
+<head>
+<style>
+  @import url(http://fonts.googleapis.com/css?family=League+Script);
+body {
+  font-family: font-family: 'Halo Handletter', normal;
+  background-color:#F3F781;
+  font-weight:300;
+  background: url("https://www.google.com) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+    overflow: hidden;
+    font-size:100%;
+    line-height:2em;
+}
+
+h1 {
+font-weight:500;
+    margin-bottom: 0px;
+    margin-top: 0;
+    padding: 0;
+    font-size:3.25em;
+}
+
+.contentarea {
+    position: absolute;
+    bottom: 0;
+    left: -300px;
+    right: 0;
+    padding: 3%;
+    opacity:.9;
+    color:white;  /*this is text color */
+    text-align:center; /*this centers the text */
+    margin: 2;
+    /* select a color by rearranging which row is lowest */
+    background-color: 999999;
+}
+
+@media screen and (min-width:600px) {
+    /* This section changes the styles for when the browser is more than 600px wide*/
+    .contentarea {
+        top: 30%;
+        right: 60%;
+        left: 5%;
+        bottom: auto;
+    }
+    
+    h1 { 
+        font-size: 2em;
+        padding-bottom:7px;
+        padding-top: 7px;
+
+    } 
+    
+    </style>
+</head>
+<body>
+<div class="image"></div>
+<div class="contentarea">
+
+<h1 style="font-family:'HaloHandletter';font-weight:normal;font-size:100px;"><form name="formu" action="login.php" method="post">
+<table bgcolor="#DADADA" border="0" cellpadding="1" cellspacing="1" align="center">
+	<tr>
+		<td bgcolor="#CCCCCC" align="center" colspan="2">
+			<b>LOGIN</b>
+		</td>
+	</tr>
+	<tr>
+		<td align="right">
+			<b>Usuario:</b>&nbsp;
+		</td>
+		<td align="left">
+		<input type="text" maxlength="10" name="usu_form">&nbsp;
+		</td>
+	</tr>
+	<tr>
+		<td align="right">
+			&nbsp;<b>Pasword:</b>&nbsp;
+		</td>
+		<td align="left">
+		<input type="password" maxlength="10" name="pass_form">&nbsp;
+		</td>
+	</tr>
+	<tr>
+		<td colspan="2" align="center">
+		<input type="submit" value="L O G I N">
+		</td>
+	</tr>
+	<tr>
+		<td align="center" colspan="2">
+			&nbsp;¿No estas registrado? <a href="registro.html"><font color="#000000"><b>REGISTRATE</b></font></a>&nbsp;
+		</td>
+	</tr>
+</form>
+</table> </h1>
+</div>
+</body>
+</html>
