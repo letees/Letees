@@ -31,6 +31,16 @@ font-family: font-family: 'Halo Handletter', normal;
     line-height:2em;
 }
 
+#box {
+float: left;
+width: 150px;
+height: 150px;
+margin-left: 20px;
+margin-top: 20px;
+padding: 15px;
+border: 5px solid black;
+}
+
 h1 {
 font-weight:500;
     margin-bottom: 0px;
@@ -193,9 +203,10 @@ font-weight:500;
 <body>
 <div class="image"></div>
 
-  <div class="contentarea1">
-    <h1 style="font-family:'HaloHandletter';font-weight:normal;font-size:40px;"><onmouseover="changeText('Yes, this is Onmouseover Text')" onmouseout="changeback('any thing')" >
+<div id="box" onmouseover="changeText('Yes, this is Onmouseover Text')" onmouseout="changeback('any thing')" >
   </div>
+  <div class="contentarea1">
+    <h1 style="font-family:'HaloHandletter';font-weight:normal;font-size:40px;"><a href="http://www.google.com">Historia</a></p>
   
   <div class="contentarea2">
     <h2 style="font-family:'HaloHandletter';font-weight:normal;font-size:40px;"><a href="http://www.google.com">Ropa</a></p>
