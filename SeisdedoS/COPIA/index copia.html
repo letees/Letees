@@ -3,22 +3,27 @@
 <style>
   @import url(http://fonts.googleapis.com/css?family=League+Script);
   
-  <script>
-function usrpas(){
-if (document.form1.txt.value=="admin" && document.form1.num.value=="Letees" || document.form1.txt.value=="Transi" && document.form1.num.value=="1234" || document.form1.txt.value=="Cris" && document.form1.num.value=="1234" ){window.location="home.htm"}
-else {alert("Error en Usuario o Contraseña. Intenta de nuevo.")}
-}
-document.oncontextmenu=new Function("return false");
-</script>
-
-<form name="form1">
-<input type="text" name="txt"> Usuario (admin)<br>
-<input type="text" name="num"> Contraseña (Letees)<br>
-<input type="text" name="text> Usuario (Transi ó Cris)<br>
-<input type="text" name="num"> Contraseña (1234)<br>
-<input type="button" value="ir a.." onclick="usrpas()">
+<form id="loginform" action="http://AQUI TU SITIO.com/wp-login.php" method="post">
+<label>Nombre de usuario</label>
+<input id="user_login" class="input" name="log" size="20" type="text" value="Usuario" tabindex="20" />
+<label>Contraseña</label>
+<input id="user_pass" class="input" name="pwd" size="20" type="password" tabindex="20" />
+<p class="submit"><input id="wp-submit" name="wp-submit"  value="Acceder" type="submit" /></p>
+<p class="forgetmenot"><label>
+<input id="rememberme" name="rememberme" type="checkbox" value="forever" tabindex="90" /> Recuérdame</label></p>
 </form>
 
+<?php global $user_ID, $user_identity, $user_level ?>
+        <?php if ( $user_ID ) : ?>
+
+<a href="http://TU SITIO.com/wp-admin/">Escritorio</a>
+<a href="<?php echo wp_logout_url(); ?>" title="Logout">SALIR</a>
+
+<?php elseif ( get_option('users_can_register') ) : ?>
+
+AQUÍ EL FORMULARIO ANTERIOR
+       
+ <?php endif // get_option('users_can_register') ?>
   
 body {
   font-family: font-family: 'Halo Handletter', normal;
