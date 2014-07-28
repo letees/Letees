@@ -42,7 +42,7 @@ font-weight:500;
     /* This section changes the styles for when the browser is more than 600px wide*/
     .contentarea {
         top: 30%;
-        right: 60%;
+        right: 20%;
         left: 5%;
         bottom: auto;
     }
@@ -54,41 +54,39 @@ font-weight:500;
 
     } 
     
+    h2 { 
+        font-size: 2em;
+        padding-bottom:-10px;
+        padding-top: -20px;
+
+    }
+    
     </style>
 </head>
 <body>
 <div class="image"></div>
 <div class="contentarea">
 
-<h1 style="font-family:'HaloHandletter';font-weight:normal;font-size:20px;"><form name="formu" action="login.php" method="post">
+<h2 style="font-family:'HaloHandletter';font-weight:normal;font-size:40px;">
 	<tr>
-		<td bgcolor="#CCCCCC" align="center" colspan="2">
-			<b>LOGIN</b>
+		<td bgcolor=#CCCCCC" align="center" colspan="2">
+			<b>Area Privada</b>
 		</td>
 	</tr>
-	<tr>
-		<td align="right">
-			<b>Usuario:</b>&nbsp;
-		</td>
-		<td align="left">
-		<input type="text" maxlength="10" name="usu_form">&nbsp;
-		</td>
-	</tr>
-	<tr>
-		<td align="right">
-			&nbsp;<b>Password:</b>&nbsp;
-		</td>
-		<td align="left">
-		<input type="password" maxlength="10" name="pass_form">&nbsp;
-		</td>
-	</tr>
-	<tr>
-		<td colspan="2" align="center">
-		<input type="submit" value="Enviar">
-		</td>
-	</tr>
-	
-</form>
+</h2>
+
+<h1 style="font-family:'HaloHandletter';font-weight:normal;font-size:30px;">    <section class="loginform cf">  
+<form name="login" action="index_submit" method="get" accept-charset="utf-8">  
+    <ul>  
+        <li><label for="usermail">Email</label>  
+        <input type="email" name="usermail" placeholder="yourname@email.com" required></li>  
+        <li><label for="password">Password</label>  
+        <input type="password" name="password" placeholder="password" required></li>  
+        <li>  
+        <input type="submit" value="Login"></li>  
+    </ul>  
+</form>  
+</section>
 </h1>
 </div>
 </body>

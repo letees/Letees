@@ -1,9 +1,7 @@
 <html>
-<head> 
+<head>
 <style>
   @import url(http://fonts.googleapis.com/css?family=League+Script);
-  
-
 body {
   font-family: font-family: 'Halo Handletter', normal;
   background-color:#F3F781;
@@ -18,25 +16,12 @@ body {
     line-height:2em;
 }
 
-h2 {
-font-weight:100;
-    margin-bottom: 0;
-    margin-top: 0px;
-    padding-bottom:15px;
-    font-size:3.25em;
-}
-
 h1 {
 font-weight:500;
     margin-bottom: 0px;
     margin-top: 0;
     padding: 0;
     font-size:3.25em;
-}
-
-p, p:link {
-    margin-bottom: 0;
-    font-size:2.55em;
 }
 
 .contentarea {
@@ -53,26 +38,13 @@ p, p:link {
     background-color: 999999;
 }
 
-a {
-    color:white;
-    text-decoration:none;
-    opacity: .7;
-    font-weight:300;
-}
-
 @media screen and (min-width:600px) {
     /* This section changes the styles for when the browser is more than 600px wide*/
     .contentarea {
         top: 30%;
-        right: 60%;
+        right: 20%;
         left: 5%;
         bottom: auto;
-    }
-    
-    h2 {
-        font-size:1.6em;
-        padding-bottom:7px;
-        padding-top: 7px;
     }
     
     h1 { 
@@ -82,21 +54,58 @@ a {
 
     } 
     
-    p, p:link {
-        font-size: .9em;
-        padding-bottom:15px;
-        padding-top:7px;
-    }
-}
+    h2 { 
+        font-size: 2em;
+        padding-bottom:-10px;
+        padding-top: -20px;
 
-</style>
+    }
+    
+    </style>
 </head>
 <body>
 <div class="image"></div>
 <div class="contentarea">
-<h2 style="font-family:'HaloHandletter';font-weight:normal;font-size:50px;">SS</h2>
-<h1 style="font-family:'HaloHandletter';font-weight:normal;font-size:100px;">SeisdedoS</h1>
-<p style="font-family:'HaloHandletter';font-weight:normal;font-size:40px;"><a href="file:///Users/carlossantosseisdedos/Documents/GitHub/Letees/SeisdedoS/Principal1.html">Entra aqui</a></p>
+
+<h2 style="font-family:'HaloHandletter';font-weight:normal;font-size:40px;">
+	<tr>
+		<td bgcolor=#CCCCCC" align="center" colspan="2">
+			<b>Area Privada</b>
+		</td>
+	</tr>
+</h2>
+
+<h1 style="font-family:'HaloHandletter';font-weight:normal;font-size:30px;"><form name="formu" action="login.php" method="post">
+	
+	<tr>
+		<td align="right">
+			<b>Usuario:</b>&nbsp;
+		</td>
+		
+		<td align="left">
+			<input type="text" maxlength="10" name="usu_form">&nbsp;
+		</td>
+
+	</tr>
+
+	<tr>
+		<td align="right">
+			&nbsp;<b>Password:</b>&nbsp;
+		</td>
+		
+		<td align="left">
+			<input type="password" maxlength="10" name="pass_form">&nbsp;
+		</td>
+	</tr>
+		
+	<tr>
+		<td colspan="2" align="center">
+			<input type="submit" value="Enviar">
+		</td>
+	</tr>
+	
+</form>
+</h1>
 </div>
 </body>
 </html>

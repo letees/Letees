@@ -1,18 +1,24 @@
 <html>
 <head>
 <style>
+
 body {
-font-family: font-family: 'Halo Handletter', normal;
   background-color:#F3F781;
   font-weight:300;
-  background: url("https://www.google.com) no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
   background-size: cover;
     overflow: hidden;
     font-size:100%;
     line-height:2em;
+}
+
+hP {
+font-weight:500;
+    margin-bottom: 0px;
+    margin-top: 0;
+    padding: 0;
+    margin: 0px;
+    font-size:3.25em;
+    color:#ffffff;
 }
 
 h1 {
@@ -56,7 +62,7 @@ h2 {
 font-weight:500;
     margin-bottom: 0px;
     margin-top: 0;
-    padding: 0;
+    padding-bottom: -20;
     margin: -20;
     font-size:3.25em;
 }
@@ -72,14 +78,14 @@ font-weight:500;
     text-align:center; /*this centers the text */
     margin: 0;
     /* select a color by rearranging which row is lowest */
-    background-color: #F781D8;
+    background-color: 999999;
 }
 
 h3 {
 font-weight:500;
     margin-bottom: 0px;
     margin-top: 0;
-    padding: 0;
+    padding-bottom: 20;
     margin: -20;
     font-size:3.25em;
 }
@@ -112,16 +118,47 @@ font-weight:500;
     text-decoration:none;
     opacity: .7;
     font-weight:300;
-    }
+    padding-bottom:20;
+}
 
+	b {
+    color:black;
+    text-decoration:none;
+    opacity: .7;
+    font-weight:300;
+    padding-bottom:20;
+    padding-left: 2;
+}
+
+.contentarea5 {
+    position: absolute;
+    bottom: 0;
+    left: -300px;
+    right: 0;
+    padding: 40;
+    opacity:.9;
+    color:white;  /*this is text color */
+    text-align:center; /*this centers the text */
+    margin: 0;
+    /* select a color by rearranging which row is lowest */
+    background-color: 999999;
+}
 @media screen and (min-width:600px) {
     /* This section changes the styles for when the browser is more than 600px wide*/
     .contentarea1 {
-        top: 5%;
+        top: 12.5%;
         right: 77%;
         left: 2%;
         bottom: 90%;
     }
+    
+    hP {
+        top: 2%;
+        left: 1%;
+        font-size:2em;
+        padding-bottom:7px;
+        padding-top:7px;
+}
     
     h1 { 
         font-size: 2em;
@@ -131,9 +168,9 @@ font-weight:500;
     } 
     
     .contentarea2 {
-        top: 5%;
-        right: 51%;
-        left: 26%;
+        top: 12.5%;
+        right: 54%;
+        left: 28%;
         bottom: 90%;
     }
     
@@ -145,21 +182,22 @@ font-weight:500;
     } 
     
     .contentarea3 {
-        top: 5%;
-        right: 25%;
-        left: 52%;
+        top: 12.5%;
+        right: 24%;
+        left: 50%;
         bottom: 90%;
     }
     
     h3 { 
-        font-size: 2em;
-        padding-bottom:7px;
-        padding-top: 7px;
+    	margin-bottom: 12;
+		margin-top: -10;
+		padding-bottom:20;
+		font-size:3.25em;
 
     }  
     
    .contentarea4 {
-        top: 5%;
+        top: 12.5%;
         right: 2%;
         left: 78%;
         bottom: 90%;
@@ -171,11 +209,19 @@ font-weight:500;
         padding-top: 7px;
 
     }  
+
+.contentarea5 {
+        top: 31%;
+        right: 2%;
+        left: 2%;
+        bottom: 0%;
+    }
     
 </style>
 </head>
 <body>
 <div class="image"></div>
+<hP style="font-family:'HaloHandletter';font-weight:normal;font-size:60px;"><b href="file:///Users/carlossantosseisdedos/Documents/GitHub/Letees/SeisdedoS/index.html">SS-SeisdedoS:Modas y Complementos</b></p>
 
   <div class="contentarea1">
     <h1 style="font-family:'HaloHandletter';font-weight:normal;font-size:40px;"><a href="file:///Users/carlossantosseisdedos/Documents/GitHub/Letees/SeisdedoS/Historia.html">Historia</a></p>
@@ -186,12 +232,15 @@ font-weight:500;
   </div>
   
   <div class="contentarea3">
-    <h3 style="font-family:'HaloHandletter';font-weight:normal;font-size:40px;"><a href="file:///Users/carlossantosseisdedos/Documents/GitHub/Letees/SeisdedoS/index.html">Inicio</a></p>
+    <h3 style="font-family:'HaloHandletter';font-weight:normal;font-size:40px;"><a href="file:///Users/carlossantosseisdedos/Documents/GitHub/Letees/SeisdedoS/Complementos.html">Complementos</a></p>
   </div>
   
   <div class="contentarea4">
     <h4 style="font-family:'HaloHandletter';font-weight:normal;font-size:40px;"><a href="file:///Users/carlossantosseisdedos/Documents/GitHub/Letees/SeisdedoS/Contacto.html">Contacto</a></p>
   </div>
+  
+   <div class="contentarea5">
+   </div>
   
 </body>
 </html>
